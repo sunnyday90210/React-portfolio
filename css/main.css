@@ -414,21 +414,37 @@ ul.sub-menu {
     background-color: #e7e7e7;
 }
 
-.home-banner-one .banner-content {
+/* .home-banner-one .banner-content {
     background-image: url(../images/bg/banner.jpg);
     background-color: #e7e7e7;
     position: relative;
     background-position: center;
     background-size: cover;
-}
+    
+} */
+
 
 .home-two #home-banner {
     background-image: url(../images/bg/korey-brown.png);
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
+    background-position: right bottom;
+    background-size: 500px;
     z-index: 1;
 }
+
+@media only screen and (max-width: 600px) {
+    .home-two #home-banner {
+        background-image: none;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .korey-h1 {
+        padding-top: 25px;
+    }
+}
+
 
 .banner-info h1 {
     font-size: 48px;
